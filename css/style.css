@@ -1,0 +1,46 @@
+/*We remove the default margins and padding to define the size of each element ourselves.*/
+*{ 
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+header{
+height: 100vh; /*hauteur du header*/
+background: url('../img/chuttersnap.jpg') center;
+background-size: cover; /*pour utiliser toute la surface de header*/
+display: flex;/*permet à l'image et la nav d'être à coté'*/
+align-items: center;
+justify-content: center;
+border: 2px solid green; 
+}
+header nav ul { 
+    position: fixed; /*ça bloque la navigation au scroll*/
+    top:10%; /* positionnement en hauteur de a nav*/
+    right: 5%;
+    background: #000;;
+    border: 2px solid red;
+    font-size: 16px;
+    color:white;
+    display: flex;
+    align-items: end;
+    text-transform: uppercase;
+
+}
+
+header nav ul li {
+    margin : 0 20px;/*ajoute des marges a gauche et a droite de la li*/
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 200px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
