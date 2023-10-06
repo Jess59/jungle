@@ -6,9 +6,48 @@
     box-sizing: border-box;
 }
 
+/******************FONTS**********************/
+@font-face {
+    font-family: 'Abril';
+    src: url('AbrilFatface-Regular.eot');
+    src: url('AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AbrilFatface-Regular.woff2') format('woff2'),
+        url('AbrilFatface-Regular.woff') format('woff'),
+        url('AbrilFatface-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontseThin';
+    src: url('Montserrat-Thin.eot');
+    src: url('Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Thin.woff2') format('woff2'),
+        url('Montserrat-Thin.woff') format('woff'),
+        url('Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontseIta';
+    src: url('Montserrat-ThinItalic.eot');
+    src: url('Montserrat-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-ThinItalic.woff2') format('woff2'),
+        url('Montserrat-ThinItalic.woff') format('woff'),
+        url('Montserrat-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*********************************end fonts*************************/
 ul{
     list-style: none;
 }
+
 header{
 height: 100vh; /*hauteur du header*/
 background: url('../img/chuttersnap.jpg') center;
@@ -18,6 +57,7 @@ align-items: center;
 justify-content: center;
 border: 2px solid green; 
 }
+
 header nav ul { 
     position: fixed; /*ça bloque la navigation au scroll*/
     top:10%; /* positionnement en hauteur de a nav*/
@@ -29,7 +69,8 @@ header nav ul {
     display: flex;
     align-items: end;
     text-transform: uppercase;
-
+    font-family: "MontseThin";
+    font-weight: 600;
 }
 
 header nav ul li {
@@ -42,5 +83,128 @@ header h1 {
     color: white;
     font-weight: bold;
     text-transform: capitalize;
+    font-family: "Abril";
+}
 
+.wel {
+    padding: 100px 0;
+    background: white;
+
+}
+
+.wel h2 {
+    font-size: 50px;
+    color: #555;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Abril";
+}
+
+.wel h3 {
+    font-size: 16px;
+    color: #546b22;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+    font-family: "MontseThin";
+    font-weight: 400;
+}
+
+
+.wel p{
+    font-size: 16px;
+    text-align: justify center;
+    color: #555;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centre le paragraphe horizontalement */
+    margin-top: 100px;
+
+}
+
+.wel div {
+    display: flex; /* Utilisez display: flex sur le conteneur parent */
+    justify-content: center; /* Pour espacer les images également */
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.wel div div img{
+    height: 100px;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.dec {
+    padding: 100px 0;
+    background: #ede6dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dec div {
+    width: 40%;
+}
+
+.dec img {
+    margin: 25px 25px;
+    height: 250px;
+}
+
+.dec h2 {
+    margin: 0;
+    font-size: 50px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.dec h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #546b22;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 170px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer h2 {
+    font-size: 50px;
+    color: #555;
+    margin:20px;
+    text-transform: capitalize;
+}
+
+footer h3 {
+    margin:20px;
+    font-size: 16px;
+    color: #546b22;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/***************************************************************************************
+RESPONSIVE
+****************************************************************************************/
+#burger{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#burger span{
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: black;
+    border-radius: 2px;
 }
